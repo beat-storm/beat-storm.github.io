@@ -9,7 +9,7 @@
   <title>Beat Storm</title>
   <style>
     body {
-      color: #2a2a2a;
+      color: #ffffff;
       font-family: sans-serif;
       overflow: hidden;
       margin: 0;
@@ -163,7 +163,7 @@
 
   <div id="loading" class="screen">
     <noscript>Enable JavaScript</noscript>
-    <h1 class="loading-text">Loading, this might take a while...</h1>
+    <h1 class="loading-text">Loading...</h1>
     
     <div class="progress-bar-outer"><div class="progress-bar-inner" id="loading-inner"></div></div>
   </div>
@@ -204,7 +204,7 @@
       setProgress(0.1);
 
       const scaffolding = new Scaffolding.Scaffolding();
-      scaffolding.width = 864;
+      scaffolding.width = 854;
       scaffolding.height = 480;
       scaffolding.resizeMode = "preserve-ratio";
       scaffolding.editableLists = false;
@@ -226,7 +226,7 @@
       scaffolding.setUsername("player####".replace(/#/g, () => Math.floor(Math.random() * 10)));
       scaffolding.setAccentColor("#ff4c4c");
 
-      scaffolding.addCloudProvider(new Scaffolding.Cloud.WebSocketProvider(["wss://clouddata.turbowarp.org","wss://clouddata.turbowarp.xyz"], "p4-@Beat Storm (v0.9.9.6).sb3"));
+      scaffolding.addCloudProvider(new Scaffolding.Cloud.WebSocketProvider(["wss://clouddata.turbowarp.org","wss://clouddata.turbowarp.xyz"], "843375363"));
 
       vm.setTurboMode(false);
       if (vm.setInterpolation) vm.setInterpolation(false);
@@ -239,11 +239,11 @@
       });
       if (vm.setCompilerOptions) vm.setCompilerOptions({
         enabled: true,
-        warpTimer: false
+        warpTimer: true
       });
 
       if (typeof ScaffoldingAddons !== 'undefined') {
-        ScaffoldingAddons.run(scaffolding, {"gamepad":false,"pointerlock":false,"specialCloudBehaviors":true,"unsafeCloudBehaviors":false,"pause":false});
+        ScaffoldingAddons.run(scaffolding, {"gamepad":false,"pointerlock":false,"specialCloudBehaviors":false,"unsafeCloudBehaviors":false,"pause":false});
       }
 
       scaffolding.setExtensionSecurityManager({
