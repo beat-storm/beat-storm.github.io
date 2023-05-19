@@ -233,13 +233,13 @@
       if (vm.setFramerate) vm.setFramerate(30);
       if (vm.renderer.setUseHighQualityRender) vm.renderer.setUseHighQualityRender(true);
       if (vm.setRuntimeOptions) vm.setRuntimeOptions({
-        fencing: false,
+        fencing: true,
         miscLimits: false,
         maxClones: 9999999999,
       });
       if (vm.setCompilerOptions) vm.setCompilerOptions({
         enabled: true,
-        warpTimer: true
+        warpTimer: false
       });
 
       if (typeof ScaffoldingAddons !== 'undefined') {
