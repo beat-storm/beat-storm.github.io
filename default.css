@@ -1,4 +1,4 @@
-body {background-image: url("source/full-logo.png"); background-size:contain; background-repeat: no-repeat; background-color: rgb(5, 0, 11);} 
+body {background-image: url("source/full-logo.png"); background-size:cover; background-repeat: no-repeat; background-color: rgb(5, 0, 11);} 
 
 
 h1, h2, h3 {
@@ -21,12 +21,13 @@ button {width: 200px; padding: 20px; font-size: 20px; font-weight: 700; cursor: 
 button:focus {outline: none}
 
 .four {
-  background: rgb(12, 0, 31);
-  color: #ffffff;
-  border-radius: 100px;
+  background: rgb(33, 0, 65);
+  color: #d1d0ff;
+  font-size: 40px;
+  border-radius: 35px;
   display: block;
   margin-left: auto;
   margin-right: auto;
   height: 100px;
-  width: 250px;
+  width: 500px;
 }
