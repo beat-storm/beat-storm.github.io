@@ -1,0 +1,38 @@
+<title>Beat Storm - Home</title>
+<meta name="twitter:card" content="summary_large_image">
+<meta content="Beat Storm - Redirect" property="og:title" />
+<meta content="A redirect link (Note, anybody can change the URL on this, be careful clicking random links.)" property="og:description" />
+<meta content="https://beat-storm.github.io/redirect" property="og:url" />
+<meta content="https://beat-storm.github.io/source/embed.png" property="og:image" />
+<meta content="#3f0075" data-react-helmet="true" name="theme-color" />
+<meta name="twitter:card" content="summary_large_image">
+
+<script>
+let params = new URL(document.location).searchParams;
+const urlloc = params.get("url");
+</script>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
+</style>
+
+<link rel="stylesheet" href="default.css" />
+<script type="text/javascript" src="main.js"></script>
+
+<img
+src="source/logo.svg"
+style="
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 600px;
+    width: 1000px;
+    padding-top: 150px;
+"
+/>
+<p style="font-family:Quicksand; padding-top: -500px;">Woah! Be careful, this link is trying to direct you off site!</p>
+<p style="font-family:Inconsolata">If you are SURE this is where you want to go, click the link below.</p>
+<p style="color:rgb(109, 109, 255); font-family: Oxygen; font-size: 50px;" id="urlthing", href= style="font-family:Inconsolata", onclick="location.href=urlloc"></p>
+<script>document.getElementById('urlthing').innerHTML = urlloc;</script>
